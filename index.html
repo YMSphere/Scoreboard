@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Score Counter</title>
+</head>
+<body>
+    <section>
+        <div class="container">
+            <div class="title-score-btn">
+                <h3 class="title">HOME</h3>
+                <div class="score-field">
+                    <p id="home-score-el"></p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn" onclick="addOneHome()">+ 1</button>
+                    <button class="btn" onclick="addTwoHome()">+ 2</button>
+                    <button class="btn" onclick="addThreeHome()">+ 3</button>
+                </div>
+            </div>
+            <button id="restart" onclick="restart()">Restart the Game</button>
+            <div class="title-score-btn">
+                <h3 class="title">GUEST</h3>
+                <div class="score-field">
+                    <p id="guest-score-el"></p>
+                </div>
+                <div class="btn-container">
+                    <button class="btn" onclick="addOneGuest()">+ 1</button>
+                    <button class="btn" onclick="addTwoGuest()">+ 2</button>
+                    <button class="btn" onclick="addThreeGuest()">+ 3</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>
